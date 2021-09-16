@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "49a740e7-e9f8-46bc-b7ad-33b40afa09e2",
+		"name": "CRUD API LOGIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Proyectos",
+			"item": [
+				{
+					"name": "/proyectos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzY2ZhN2JmMWI5N2RlYTMyN2M0YmRiIn0sImlhdCI6MTYzMTM4NzA1OSwiZXhwIjoxNjMxMzkwNjU5fQ.Q32_uammgW3iWuguI0JMv6vE4iLgSAi3okvLwxcy2eQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/proyectos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proyectos/:idProyecto",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzY2ZhN2JmMWI5N2RlYTMyN2M0YmRiIn0sImlhdCI6MTYzMTM4NzA1OSwiZXhwIjoxNjMxMzkwNjU5fQ.Q32_uammgW3iWuguI0JMv6vE4iLgSAi3okvLwxcy2eQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tienda Ecommerce Python\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proyectos/613cfe660fadf1d6861242f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proyectos",
+								"613cfe660fadf1d6861242f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proyectos/:idProyecto",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzY2ZhN2JmMWI5N2RlYTMyN2M0YmRiIn0sImlhdCI6MTYzMTM4NzA1OSwiZXhwIjoxNjMxMzkwNjU5fQ.Q32_uammgW3iWuguI0JMv6vE4iLgSAi3okvLwxcy2eQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proyectos/613cfe660fadf1d6861242f4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proyectos",
+								"613cfe660fadf1d6861242f4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proyectos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzZDM5ZmU4NWRmMjY2ODhiNWQyZTY4In0sImlhdCI6MTYzMTQwMjUzOCwiZXhwIjoxNjMxNDA2MTM4fQ.oczGDvoy14YDZi6FmPIot7IQKOGOd4iSQ0gIHQw_6Is",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tienda Restuarante Microsoft\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proyectos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proyectos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tareas",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzZDM5ZmU4NWRmMjY2ODhiNWQyZTY4In0sImlhdCI6MTYzMTQwMjUzOCwiZXhwIjoxNjMxNDA2MTM4fQ.oczGDvoy14YDZi6FmPIot7IQKOGOd4iSQ0gIHQw_6Is",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"hacer tarea\",\r\n    \"proyecto\": \"613d3a5585df26688b5d2e6c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/tareas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tareas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzY2ZhN2JmMWI5N2RlYTMyN2M0YmRiIn0sImlhdCI6MTYzMTQwMDUwNiwiZXhwIjoxNjMxNDA0MTA2fQ.S3wwhqUPMMx0Fh2JpJoSvFdv1PLixBwJr8iyUkLTHLw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"proyecto\": \"613d380365282f29a9b89010\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/tareas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tareas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzZDM5ZmU4NWRmMjY2ODhiNWQyZTY4In0sImlhdCI6MTYzMTQwMjUzOCwiZXhwIjoxNjMxNDA2MTM4fQ.oczGDvoy14YDZi6FmPIot7IQKOGOd4iSQ0gIHQw_6Is",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"hola\",\r\n    \"proyecto\":\"613d3a5585df26688b5d2e6c\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/tareas/613d3aa685df26688b5d2e70",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tareas",
+								"613d3aa685df26688b5d2e70"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/tareas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"tareas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/auth",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjEzZDM5ZmU4NWRmMjY2ODhiNWQyZTY4In0sImlhdCI6MTYzMTQwMjUzOCwiZXhwIjoxNjMxNDA2MTM4fQ.oczGDvoy14YDZi6FmPIot7IQKOGOd4iSQ0gIHQw_6Is",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"correo@correo.com\",\r\n    \"password\": \"correo\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"jonatan\",\r\n    \"email\": \"correo@correo.com\",\r\n    \"password\": \"correo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
